@@ -1,8 +1,8 @@
 // Place any global data in this file.
 // You can import this data from anywhere in your site by using the `import` keyword.
 
-export const SITE_TITLE = "Flavia's Sweets";
-export const SITE_DESCRIPTION = "Designing delicious cakes for all occasions.";
+export const SITE_TITLE = "NatRezInk";
+export const SITE_DESCRIPTION = "Designing tattoos to last a lifetime.";
 
 export const NAV_ITEMS = [
 	{ text: "About Us", href: "/#about" },

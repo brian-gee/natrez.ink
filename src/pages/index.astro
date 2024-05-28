@@ -5,8 +5,8 @@ import About from "../components/About.astro";
 import Cakes from "../components/Cakes.astro";
 import FAQ from "../components/FAQ.astro";
 import Contact from "../components/Contact.astro";
-import Divider from "../components/Divider.astro";
-import HeroDivider from "../components/HeroDivider.astro";
+
+import natalia from "../assets/natalia.webp";
 ---
 
 <Layout>
@@ -16,14 +16,18 @@ import HeroDivider from "../components/HeroDivider.astro";
     data-bs-root-margin="0px 0px -40%"
     data-bs-smooth-scroll="true"
   >
-    <Hero />
-    <HeroDivider />
-    <About />
-    <Divider />
+    <Hero
+      tagline="Where art meets skin"
+      message="We are passionate about turning your unique ideas into stunning tattoos that you’ll cherish forever. Located in the heart of South Florida, our talented artists specialize in custom designs that bring your vision to life. Whether you're in Hollywood or Miami, let us help you ink your story with creativity and precision!"
+      cta="Book a Consultation"
+    />
+    <About
+      title="About Us"
+      message="Our founder and lead artist, Natalia Rezende, brings her unique vision and talent to every piece she creates. Originally from Brazil, Natalia has spent years honing her craft and developing a distinctive style that blends intricate detail with bold, expressive designs. Her passion for tattooing is evident in every line and shade, ensuring each client leaves with a piece of art that they’ll cherish forever."
+      image={natalia}
+    />
     <Cakes />
-    <Divider />
     <FAQ />
-    <Divider />
     <Contact />
   </div>
 </Layout>

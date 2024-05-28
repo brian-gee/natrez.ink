@@ -2,12 +2,14 @@
 const today = new Date();
 import Instagram from "../assets/icons/Instagram.astro";
 import Facebook from "../assets/icons/Facebook.astro";
+import { SITE_TITLE } from "../consts";
 ---
 
 <div class="container">
   <footer class="py-3 my-4">
     <p class="text-center text-body-secondary border-top pt-4">
-      &copy; {today.getFullYear()} Flavia's Sweets. All rights reserved.
+      &copy; {today.getFullYear()}
+      {SITE_TITLE}. All rights reserved.
     </p>
     <div class="d-flex justify-content-center">
       <a

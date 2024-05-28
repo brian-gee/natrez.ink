@@ -1,0 +1,107 @@
+<section id="contact" class="container">
+  <form
+    id="contactForm"
+    action="https://api.web3forms.com/submit"
+    method="POST"
+  >
+    <input
+      type="hidden"
+      name="access_key"
+      value="795bef11-df67-4a28-93d3-bbe7d6c7dc6e"
+    />
+    <input type="text" name="honeypot" id="honeypot" style="display:none;" />
+    <h2 class="display-5 fw-bold text-body-emphasis text-center pb-5">
+      Contact Us
+    </h2>
+    <div class="mb-3">
+      <label for="nameInput" class="form-label">Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="nameInput"
+        name="name"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input
+        type="email"
+        class="form-control"
+        id="emailInput"
+        name="email"
+        required
+      />
+      <div id="emailHelp" class="form-text">
+        We'll never share your email with anyone else.
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="messageInput" class="form-label">Message</label>
+      <textarea
+        class="form-control"
+        id="messageInput"
+        rows="4"
+        cols="50"
+        name="message"
+        required></textarea>
+    </div>
+    <!-- hCaptcha Spam Protection -->
+    <div class="h-captcha" data-captcha="true"></div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</section>
+
+<style>
+  #messageInput {
+    resize: none;
+  }
+  #honeypot {
+    display: none;
+  }
+</style>
+
+<script src="https://web3forms.com/client/script.js" async defer is:inline
+></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById(
+      "contactForm",
+    ) as HTMLFormElement | null;
+
+    if (form) {
+      form.addEventListener("submit", async function (event) {
+        event.preventDefault();
+
+        const honeypotElement = document.getElementById(
+          "honeypot",
+        ) as HTMLInputElement | null;
+        const honeypot = honeypotElement ? honeypotElement.value : "";
+
+        if (honeypot !== "") {
+          // If honeypot is filled, it's likely a bot
+          alert("Spam detected. Please try again.");
+          return;
+        }
+
+        const formData = new FormData(form);
+        try {
+          const response = await fetch(form.action, {
+            method: form.method,
+            body: formData,
+          });
+
+          if (response.ok) {
+            window.location.href = "/success";
+          } else {
+            alert("There was an error submitting the form. Please try again.");
+          }
+        } catch (error) {
+          console.error("Error submitting the form:", error);
+          alert("There was an error submitting the form. Please try again.");
+        }
+      });
+    }
+  });
+</script>

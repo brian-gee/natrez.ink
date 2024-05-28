@@ -1,0 +1,58 @@
+---
+import { Image } from "astro:assets";
+import Cake1 from "../assets/chanelCake.jpg";
+import Cake2 from "../assets/faceCake.jpg";
+import Cake3 from "../assets/jungleCake.jpg";
+---
+
+<section id="gallery" class="container">
+  <div class="text-center">
+    <h2 class="display-5 fw-bold text-body-emphasis">Our Creations</h2>
+    <div class="col-lg-8 mx-auto">
+      <p class="lead mb-4">
+        Explore our gallery of custom cakes, each crafted with passion and
+        precision. From elegant wedding cakes to fun birthday designs, we bring
+        your cake dreams to life.
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 mb-4">
+        <Image
+          src={Cake1}
+          class="img-fluid border rounded-3"
+          alt="Custom Cake 1"
+          width="300"
+          height="300"
+          loading="lazy"
+        />
+      </div>
+      <div class="col-lg-4 mb-4">
+        <Image
+          src={Cake2}
+          class="img-fluid border rounded-3"
+          alt="Custom Cake 2"
+          width="300"
+          height="300"
+          loading="lazy"
+        />
+      </div>
+      <div class="col-lg-4 mb-4">
+        <Image
+          src={Cake3}
+          class="img-fluid border rounded-3"
+          alt="Custom Cake 3"
+          width="300"
+          height="300"
+          loading="lazy"
+        />
+      </div>
+    </div>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center pt-4">
+      <a href="https://www.instagram.com/flavias_sweets/" target="_blank">
+        <button type="button" class="btn btn-primary btn-lg px-4"
+          >See More on Instagram</button
+        >
+      </a>
+    </div>
+  </div>
+</section>

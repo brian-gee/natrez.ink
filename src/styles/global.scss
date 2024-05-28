@@ -1,0 +1,37 @@
+@import "./bootstrap.scss";
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
+
+html {
+    scroll-padding-top: 100px;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+
+.nav-link.active,
+.link-underline-dark {
+    text-decoration: underline;
+}
+
+.decoration-break {
+    box-decoration-break: clone;
+}
+
+section {
+  @extend .container;
+  @extend .px-4;
+  @extend .py-5;
+  @extend .my-5;
+}
+
+.custom-divider {
+  background-color: #f8f9fa; // Light gray background
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border: none;
+  box-shadow: inset 0 4px 6px -1px rgba(0, 0, 0, 0.1), inset 0 -4px 6px -1px rgba(0, 0, 0, 0.1); // Creating a subtle inset shadow effect
+}
+

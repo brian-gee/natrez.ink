@@ -1,0 +1,31 @@
+---
+const today = new Date();
+import Instagram from "../assets/icons/Instagram.astro";
+import Facebook from "../assets/icons/Facebook.astro";
+---
+
+<div class="container">
+  <footer class="py-3 my-4">
+    <p class="text-center text-body-secondary border-top pt-4">
+      &copy; {today.getFullYear()} Flavia's Sweets. All rights reserved.
+    </p>
+    <div class="d-flex justify-content-center">
+      <a
+        href="https://www.instagram.com/flavias_sweets/"
+        target="_blank"
+        class="me-3"
+        aria-label="Visit Flavia's Sweets on Instagram"
+      >
+        <Instagram />
+      </a>
+      <a
+        href="https://www.facebook.com/Flaviasweets/"
+        target="_blank"
+        class="me-3"
+        aria-label="Visit Flavia's Sweets on Facebook"
+      >
+        <Facebook />
+      </a>
+    </div>
+  </footer>
+</div>

@@ -1,0 +1,50 @@
+[debug] [2024-05-28T15:43:40.989Z] ----------------------------------------------------------------------
+[debug] [2024-05-28T15:43:40.990Z] Command:       /usr/local/bin/node /Users/brian/Library/pnpm/global/5/node_modules/firebase-tools/lib/bin/firebase.js init
+[debug] [2024-05-28T15:43:40.990Z] CLI Version:   13.7.2
+[debug] [2024-05-28T15:43:40.990Z] Platform:      darwin
+[debug] [2024-05-28T15:43:40.991Z] Node Version:  v18.17.1
+[debug] [2024-05-28T15:43:40.991Z] Time:          Tue May 28 2024 11:43:40 GMT-0400 (Eastern Daylight Time)
+[debug] [2024-05-28T15:43:40.991Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-28T15:43:40.992Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-05-28T15:43:41.010Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-28T15:43:41.010Z] > authorizing via signed-in user (briangeertsma@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/brian/dev/bs-natrez
+
+[debug] [2024-05-28T15:43:41.125Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-05-28T15:43:41.126Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-05-28T15:43:49.589Z] > refreshing access token with scopes: []
+[debug] [2024-05-28T15:43:49.591Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-05-28T15:43:49.591Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-05-28T15:43:49.707Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-05-28T15:43:49.708Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-05-28T15:43:49.723Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-05-28T15:43:50.158Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-05-28T15:43:50.159Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project natrez-6ec58 (natrez) 
+[info] 
+=== Hosting Setup
+[debug] [2024-05-28T15:43:52.393Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/natrez-6ec58 [none]
+[debug] [2024-05-28T15:43:53.015Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/natrez-6ec58 200
+[debug] [2024-05-28T15:43:53.016Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/natrez-6ec58 {"projectId":"natrez-6ec58","projectNumber":"219139861232","displayName":"natrez","name":"projects/natrez-6ec58","resources":{"hostingSite":"natrez-6ec58"},"state":"ACTIVE","etag":"1_6ef40603-9173-4917-8418-27b01ea5ad91"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 

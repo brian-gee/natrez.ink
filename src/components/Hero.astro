@@ -1,0 +1,41 @@
+---
+import kidsaroundcake from "../assets/kids-around-cake.jpeg";
+---
+
+<div
+  class="container-fluid min-vh-100 d-flex flex-column justify-content-center align-items-center text-center position-relative bg-dark"
+  style={`background-image: url(${kidsaroundcake.src}); background-size: cover; background-position: center; background-repeat: no-repeat;`}
+>
+  <div
+    class="overlay bg-dark bg-opacity-75 position-absolute top-0 start-0 w-100 h-100"
+  >
+  </div>
+  <div class="px-4 pt-5 my-5 position-relative text-light">
+    <h1 class="display-4 fw-bold text-white">Sweeten Your Celebrations</h1>
+    <div class="col-lg-8 mx-auto">
+      <p class="lead mb-4 text-light">
+        Welcome to Flavia's Sweets! We create exquisite cakes and delicious
+        sweets, perfect for any occasion, right here in the South Florida area,
+        including Hollywood and Miami. Let us add a touch of sweetness to your
+        special moments!
+      </p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        <a href="#contact">
+          <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">
+            Order now
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .overlay {
+    z-index: 1;
+  }
+
+  .position-relative {
+    z-index: 2;
+  }
+</style>

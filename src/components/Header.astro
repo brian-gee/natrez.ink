@@ -1,0 +1,74 @@
+---
+import { SITE_TITLE } from "../consts";
+import type { Link } from "../types/links";
+
+type Props = {
+  links: Link[];
+};
+
+const { links } = Astro.props;
+---
+
+<nav
+  id="navbar"
+  class="navbar navbar-expand-lg py-3 position-sticky sticky-top bg-primary"
+  data-bs-theme="dark"
+>
+  <div class="container">
+    <a href="/" class="navbar-brand ps-2 ps-lg-0" aria-label={SITE_TITLE}>
+      {SITE_TITLE}
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbar-collapse"
+      aria-controls="navbar-collapse"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse pt-2 pt-lg-0" id="navbar-collapse">
+      <ul class="navbar-nav ms-auto text-end d-flex align-items-center">
+        {
+          links.map(({ href, text }) => (
+            <li class="nav-item ms-lg-4">
+              <a
+                href={href}
+                class="nav-link link-offset-2 d-block py-2 py-lg-0"
+              >
+                {text}
+              </a>
+            </li>
+          ))
+        }
+        <li class="nav-item ms-lg-4">
+          <a href="#contact">
+            <button class="btn btn-secondary">Let’s Bake!</button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+  import { Collapse } from "bootstrap";
+  const $navbar = document.getElementById("navbar-collapse");
+  if ($navbar) {
+    const collapse = new Collapse($navbar, { toggle: false });
+    $navbar.querySelectorAll(".nav-item").forEach((link) => {
+      link.addEventListener("click", () => {
+        collapse.hide();
+      });
+    });
+  }
+</script>
+
+<style>
+  .navbar-nav {
+    width: 100%;
+    justify-content: flex-end;
+  }
+</style>

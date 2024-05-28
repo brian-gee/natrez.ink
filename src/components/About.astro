@@ -1,0 +1,28 @@
+---
+import { Image } from "astro:assets";
+import Flavia from "../assets/flavia.webp";
+---
+
+<section id="about">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <Image
+        src={Flavia}
+        class="d-block mx-lg-auto img-fluid rounded"
+        alt="Bootstrap Themes"
+        width="700"
+        height="500"
+        loading="lazy"
+      />
+    </div>
+    <div class="col-lg-6">
+      <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">About Us</h1>
+      <p class="lead">
+        At Flavia's Sweets, we believe every cake tells a story. Our passion is
+        creating custom cakes that not only look stunning but also taste
+        amazing. From birthdays to weddings, our cakes add a special touch to
+        your celebrations.
+      </p>
+    </div>
+  </div>
+</section>

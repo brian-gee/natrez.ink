@@ -4,15 +4,15 @@ const { tagline, message, cta } = Astro.props;
 ---
 
 <div
-  class="container-fluid min-vh-100 d-flex flex-column justify-content-center align-items-center text-center position-relative bg-dark"
-  style={`background-image: url(${plant_studio.src}); background-size: cover; background-position: center; background-repeat: no-repeat;`}
+  class="container-fluid d-flex flex-column justify-content-center align-items-center text-center position-relative bg-dark"
+  style={`background-image: url(${plant_studio.src}); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 80vh;`}
 >
   <div
     class="overlay bg-dark bg-opacity-75 position-absolute top-0 start-0 w-100 h-100"
   >
   </div>
-  <div class="px-4 pt-5 my-5 position-relative text-light">
-    <h1 class="display-4 fw-bold text-white">{tagline}</h1>
+  <div class="px-4 my-5 position-relative text-light">
+    <h1 class="display-4 pb-4 fw-bold text-white">{tagline}</h1>
     <div class="col-lg-8 mx-auto">
       <p class="lead mb-4 text-light">
         {message}

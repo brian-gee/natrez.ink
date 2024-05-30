@@ -67,8 +67,46 @@ const { links } = Astro.props;
 </script>
 
 <style>
-  .navbar-nav {
-    width: 100%;
-    justify-content: flex-end;
+  .navbar-brand {
+    font-family: "Pacifico", cursive; /* Example of a distinctive font */
+    font-size: 1.5rem;
+    color: #fff !important;
+  }
+
+  .navbar-nav .nav-link {
+    transition: color 0.3s ease;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #ffd700; /* Change to a gold color on hover */
+  }
+
+  .btn-secondary {
+    background-color: #f0ad4e;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-secondary:hover {
+    background-color: #ec971f;
+  }
+
+  .navbar.bg-primary {
+    transition: background-color 0.3s ease;
+  }
+
+  .navbar.bg-primary.scrolled {
+    background-color: rgba(0, 0, 0, 0.9); /* Darker background on scroll */
   }
 </style>
+
+<script>
+  window.addEventListener("scroll", () => {
+    const navbar = document.getElementById("navbar");
+    if (window.scrollY > 50) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
+</script>

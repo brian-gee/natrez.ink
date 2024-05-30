@@ -30,7 +30,7 @@ const { links } = Astro.props;
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse pt-2 pt-lg-0" id="navbar-collapse">
-      <ul class="navbar-nav ms-auto text-end d-flex align-items-center">
+      <ul class="navbar-nav ms-auto text-end">
         {
           links.map(({ href, text }) => (
             <li class="nav-item ms-lg-4">
@@ -44,9 +44,9 @@ const { links } = Astro.props;
           ))
         }
         <li class="nav-item ms-lg-4">
-          <a href="#contact">
-            <button class="btn btn-secondary">Let’s tattoo!</button>
-          </a>
+          <!-- <a href="#contact"> -->
+          <!--   <button class="btn btn-secondary">Let’s tattoo!</button> -->
+          <!-- </a> -->
         </li>
       </ul>
     </div>

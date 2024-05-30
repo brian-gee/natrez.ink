@@ -1,8 +1,9 @@
 ---
+import { INSTAGRAM_URL } from "../consts";
 import { Image } from "astro:assets";
-import Cake1 from "../assets/chanelCake.jpg";
-import Cake2 from "../assets/faceCake.jpg";
-import Cake3 from "../assets/jungleCake.jpg";
+import zoro from "../assets/zoro.jpeg";
+import crane from "../assets/crane.jpeg";
+import cactus from "../assets/cactus.jpeg";
 ---
 
 <section id="gallery" class="container">
@@ -18,7 +19,7 @@ import Cake3 from "../assets/jungleCake.jpg";
     <div class="row">
       <div class="col-lg-4 mb-4">
         <Image
-          src={Cake1}
+          src={zoro}
           class="img-fluid border rounded-3"
           alt="Custom Cake 1"
           width="300"
@@ -28,7 +29,7 @@ import Cake3 from "../assets/jungleCake.jpg";
       </div>
       <div class="col-lg-4 mb-4">
         <Image
-          src={Cake2}
+          src={crane}
           class="img-fluid border rounded-3"
           alt="Custom Cake 2"
           width="300"
@@ -38,7 +39,7 @@ import Cake3 from "../assets/jungleCake.jpg";
       </div>
       <div class="col-lg-4 mb-4">
         <Image
-          src={Cake3}
+          src={cactus}
           class="img-fluid border rounded-3"
           alt="Custom Cake 3"
           width="300"
@@ -48,7 +49,7 @@ import Cake3 from "../assets/jungleCake.jpg";
       </div>
     </div>
     <div class="d-grid gap-2 d-sm-flex justify-content-sm-center pt-4">
-      <a href="https://www.instagram.com/flavias_sweets/" target="_blank">
+      <a href={INSTAGRAM_URL} target="_blank">
         <button type="button" class="btn btn-primary btn-lg px-4"
           >See More on Instagram</button
         >

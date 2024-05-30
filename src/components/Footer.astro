@@ -2,7 +2,7 @@
 const today = new Date();
 import Instagram from "../assets/icons/Instagram.astro";
 import Facebook from "../assets/icons/Facebook.astro";
-import { SITE_TITLE } from "../consts";
+import { SITE_TITLE, INSTAGRAM_URL } from "../consts";
 ---
 
 <div class="container">
@@ -13,21 +13,21 @@ import { SITE_TITLE } from "../consts";
     </p>
     <div class="d-flex justify-content-center">
       <a
-        href="https://www.instagram.com/flavias_sweets/"
+        href={INSTAGRAM_URL}
         target="_blank"
         class="me-3"
         aria-label="Visit Flavia's Sweets on Instagram"
       >
         <Instagram />
       </a>
-      <a
-        href="https://www.facebook.com/Flaviasweets/"
-        target="_blank"
-        class="me-3"
-        aria-label="Visit Flavia's Sweets on Facebook"
-      >
-        <Facebook />
-      </a>
+      <!-- <a -->
+      <!--   href="https://www.facebook.com/Flaviasweets/" -->
+      <!--   target="_blank" -->
+      <!--   class="me-3" -->
+      <!--   aria-label="Visit Flavia's Sweets on Facebook" -->
+      <!-- > -->
+      <!--   <Facebook /> -->
+      <!-- </a> -->
     </div>
   </footer>
 </div>

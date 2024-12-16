@@ -17,6 +17,19 @@ const turnstileSiteKey = import.meta.env.SITE_KEY; // Access the SITE_KEY from t
     <h2 class="display-5 fw-bold text-body-emphasis text-center pb-2">
       Contact Us
     </h2>
+    <div id="contactHelp" class="form-text pb-3">
+      To help us better understand your tattoo needs, please provide as much
+      information as possible, including:
+      <ul class="pt-3">
+        <li>Design ideas and inspiration</li>
+        <li>Placement on the body</li>
+        <li>Size and color preferences</li>
+        <li>Any relevant medical or skin conditions</li>
+        <li>Your availability for consultations and appointments</li>
+      </ul>
+      The more details you provide, the better we can assist you in creating your
+      unique tattoo.
+    </div>
     <div class="mb-3">
       <div class="row">
         <div class="col-6">
@@ -60,9 +73,6 @@ const turnstileSiteKey = import.meta.env.SITE_KEY; // Access the SITE_KEY from t
         name="email"
         required
       />
-      <div id="emailHelp" class="form-text">
-        We'll never share your email with anyone else.
-      </div>
     </div>
     <div class="mb-3">
       <label for="bodyPlacementInput" class="form-label">Body Placement</label>
@@ -96,8 +106,10 @@ const turnstileSiteKey = import.meta.env.SITE_KEY; // Access the SITE_KEY from t
     </div>
     <!-- Turnstile Spam Protection -->
     <div class="cf-turnstile" data-sitekey={turnstileSiteKey}></div>
+    <div id="privacyHelp" class="form-text pb-3">
+      We'll never share your personal information with anyone else.
+    </div>
     <div class="d-flex">
-      <div class="offset-2 col"></div>
       <button class="btn btn-primary ms-auto px-3">Submit</button>
     </div>
   </form>

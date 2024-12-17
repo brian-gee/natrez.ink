@@ -88,7 +88,7 @@ const posts = (await getCollection("blog")).sort(
   <body>
     <Header links={NAV_ITEMS} />
     <main>
-      <section>
+      <section class="container-fluid">
         <ul>
           {
             posts.map((post) => (

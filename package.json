@@ -11,19 +11,19 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.6.0",
-    "@astrojs/mdx": "^3.0.0",
-    "@astrojs/rss": "^4.0.5",
-    "@astrojs/sitemap": "^3.1.4",
+    "@astrojs/mdx": "^3.1.9",
+    "@astrojs/rss": "^4.0.10",
+    "@astrojs/sitemap": "^3.2.1",
     "@types/bootstrap": "^5.2.10",
-    "astro": "^4.8.2",
+    "astro": "^4.16.18",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "install": "^0.13.0",
-    "sass": "^1.77.2",
-    "typescript": "^5.4.5"
+    "sass": "^1.83.0",
+    "typescript": "^5.7.2"
   },
   "devDependencies": {
-    "prettier": "^3.2.5",
+    "prettier": "^3.4.2",
     "prettier-plugin-astro": "^0.13.0"
   }
 }

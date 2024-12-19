@@ -9,23 +9,23 @@ Congratulations on your new tattoo from NatRezInk! Proper aftercare is crucial t
 
 ## Immediate Aftercare (First 2-3 Hours)
 
-### Leaving the Studio
+###### Leaving the Studio
 - Your artist will cover your fresh tattoo with a protective bandage or wrap.
 - Keep this covering on for the time recommended by your tattoo artist (typically 2-4 hours).
 - Wash your hands thoroughly before removing the bandage.
 
 ## Initial Cleaning and Care (First 2 Weeks)
 
-### Cleaning Protocol
+###### Cleaning Protocol
 1. Wash your hands completely before touching your tattoo.
 2. Gently clean the tattoo with lukewarm water and a mild, fragrance-free soap.
 3. Use your clean fingertips to softly remove any blood, plasma, or excess ink.
 4. Pat dry with a clean, soft towel or let air dry.
 5. Apply a thin layer of recommended healing ointment.
 
-### What to Avoid
+###### What to Avoid
 - Do not scrub the tattoo
-- Avoid soaking the tattoo in water (no swimming, baths, or long showers)
+- Do not soak your tattoo in water (no swimming, baths, or long showers)
 - Keep the tattoo out of direct sunlight
 - Do not pick or scratch at scabs
 - Avoid tight clothing that might rub against the tattoo
@@ -38,36 +38,36 @@ Congratulations on your new tattoo from NatRezInk! Proper aftercare is crucial t
 
 ## Healing Stages and What to Expect
 
-### Week 1-2
+###### Week 1-2
 - Tattoo will appear bright and slightly raised
 - Some redness and mild swelling is normal
 - Light scabbing may occur
 - Keep the area clean and moisturized
 
-### Week 2-3
+###### Week 2-3
 - Scabs will start to naturally flake off
 - Do not pick or remove scabs
 - Skin may appear slightly dull or cloudy (this is normal)
 
-### Week 3-4
+###### Week 3-4
 - Tattoo will begin to look more settled and clear
 - Continue moisturizing to support skin health
 
 ## Long-Term Tattoo Care
 
-### Sun Protection
+###### Sun Protection
 - Always apply high SPF sunscreen to protect your tattoo from fading
 - UV rays can significantly damage tattoo pigmentation
 - Wear protective clothing when possible
 
-### Moisturization
+###### Moisturization
 - Continue to keep your tattoo moisturized
 - Use unscented, natural lotions
 - Avoid products with harsh chemicals
 
 ## When to Seek Medical Attention
 
-### Warning Signs of Infection
+###### Warning Signs of Infection
 - Excessive redness beyond the tattoo area
 - Sustained fever
 - Unusual discharge or pus

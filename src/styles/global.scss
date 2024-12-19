@@ -1,6 +1,13 @@
 @import "./bootstrap.scss";
-@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
 
+@font-face {
+  font-family: 'ITC';
+  src: url('/fonts/itc.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+ 
 html {
     scroll-padding-top: 100px;
 }

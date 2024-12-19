@@ -6,7 +6,7 @@ export const SITE_DESCRIPTION = "Designing tattoos to last a lifetime.";
 export const INSTAGRAM_URL = "https://www.instagram.com/natrez.ink";
 
 export const NAV_ITEMS = [
-	{ text: "About Us", href: "/#about" },
+	// { text: "About Us", href: "/#about" },
 	{ text: "Gallery", href: "/#gallery" },
 	{ text: "FAQ", href: "/#faq" },
 	{ text: "Contact", href: "/#contact" },
